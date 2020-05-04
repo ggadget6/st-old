@@ -8,9 +8,9 @@
 static char *font = "mono:pixelsize=14:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-/*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
-/*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
-/*	"Liberation Mono:pixelsize=12:antialias=true:autohint=true"  */
+	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", 
+	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", 
+	"Liberation Mono:pixelsize=12:antialias=true:autohint=true"  
 };
 
 static int borderpx = 2;
@@ -164,6 +164,7 @@ static unsigned int defaultattr = 11;
  */
 ResourcePref resources[] = {
 		{ "font",         STRING,  &font },
+        { "font0",        STRING,  &font2[0] },
 		{ "color0",       STRING,  &colorname[0] },
 		{ "color1",       STRING,  &colorname[1] },
 		{ "color2",       STRING,  &colorname[2] },
